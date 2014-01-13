@@ -22,6 +22,7 @@
 		3C46994517B2F10F007CF8AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C46992417B2F10F007CF8AA /* UIKit.framework */; };
 		3C46994D17B2F10F007CF8AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C46994B17B2F10F007CF8AA /* InfoPlist.strings */; };
 		3C46994F17B2F10F007CF8AA /* AirplayTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C46994E17B2F10F007CF8AA /* AirplayTestTests.m */; };
+		3C46995B17B2F728007CF8AA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C46995A17B2F728007CF8AA /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		3C46994A17B2F10F007CF8AA /* AirplayTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirplayTestTests-Info.plist"; sourceTree = "<group>"; };
 		3C46994C17B2F10F007CF8AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3C46994E17B2F10F007CF8AA /* AirplayTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AirplayTestTests.m; sourceTree = "<group>"; };
+		3C46995817B2F70F007CF8AA /* MediaToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaToolbox.framework; path = System/Library/Frameworks/MediaToolbox.framework; sourceTree = SDKROOT; };
+		3C46995A17B2F728007CF8AA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C46995B17B2F728007CF8AA /* MediaPlayer.framework in Frameworks */,
 				3C46992317B2F10F007CF8AA /* CoreGraphics.framework in Frameworks */,
 				3C46992517B2F10F007CF8AA /* UIKit.framework in Frameworks */,
 				3C46992117B2F10F007CF8AA /* Foundation.framework in Frameworks */,
@@ -103,6 +107,8 @@
 		3C46991F17B2F10F007CF8AA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C46995A17B2F728007CF8AA /* MediaPlayer.framework */,
+				3C46995817B2F70F007CF8AA /* MediaToolbox.framework */,
 				3C46992017B2F10F007CF8AA /* Foundation.framework */,
 				3C46992217B2F10F007CF8AA /* CoreGraphics.framework */,
 				3C46992417B2F10F007CF8AA /* UIKit.framework */,
@@ -391,7 +397,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayTest/AirplayTest-Prefix.pch";
 				INFOPLIST_FILE = "AirplayTest/AirplayTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,7 +412,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayTest/AirplayTest-Prefix.pch";
 				INFOPLIST_FILE = "AirplayTest/AirplayTest-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -468,6 +478,7 @@
 				3C46995417B2F10F007CF8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C46995517B2F10F007CF8AA /* Build configuration list for PBXNativeTarget "AirplayTestTests" */ = {
 			isa = XCConfigurationList;
@@ -476,6 +487,7 @@
 				3C46995717B2F10F007CF8AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

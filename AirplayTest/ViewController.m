@@ -18,6 +18,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.viewView.backgroundColor = [UIColor clearColor];
+    MPVolumeView *myVolumeView = [[MPVolumeView alloc] initWithFrame: self.viewView.bounds];
+    [self.viewView addSubview: myVolumeView];
+
 }
 
 - (void)didReceiveMemoryWarning
